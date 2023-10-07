@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website with Login & Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">  
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <button class="button" id="form-open">Login</button>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+      <div class="form_container">
+        <i class="uil uil-times form_close"></i>
+        <!--<div class="slider"></div>-->
+        <div id="formSwitchBtn">
+            <button id="ShowLoginBtn" class="active">Login</button>
+            <button id="ShowRegistrationBtn" class="active">Sign Up</button>
+        </div>
+        <!-- Login From -->
+        <div class="form login_form">
+          <form action="#"  id="form">
+            <div class="input_box">
+               <label for="username">Full Name*</label>
+               <input type="text" id="username" placeholder="Enter your username" required />
+               <span class="material-icons success"> check_circle</span>
+               <span class="material-icons error ">error</span>
+               <small>Error message</small>
+            </div>
+            <div class="input_box">
+              <label for="password">Password*</label>  
+              <input type="password"id="password" placeholder="Enter your password" required />
+              <span class="material-icons success"> check_circle</span>
+                <span class="material-icons error ">error</span>
+                <small>Error message</small>
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">Remember me</label>
+              </span>
+              <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+
+            <button type="submit"  class="button">Login Now</button>
+
+            <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+          </form>
+        </div>
+
+        <!-- Signup From -->
+        <div class="form signup_form">
+          <form action="#">
+            <div class="input_box">
+                <label>Full Name*</label>
+              <input type="text" placeholder="Enter your username" required />
+              
+            </div>
+            <div class="input_box">
+              <label for="email">Email*</label>
+              <input type="email" id="email" placeholder="Enter your email here" required />
+            </div>
+            <div class="input_box">
+              <label>Password*</label>
+              <input type="password" placeholder="Enter your password" required />
+              
+              <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="input_box">
+              <label>Contact*</label>
+              <input type="tel" placeholder="Enter contact number" required />
+              
+            </div>
+
+            <button type="submit" class="button">Signup Now</button>
+
+            <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript"    src="script.js"></script>
+  </body>
+</html>
